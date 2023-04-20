@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Poker Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+
+    <button class="button" onclick="shuffle()">Shuffle suits</button>
+    <div id="allCards">
+
+        <div id="CLUB" class="suits">
+            <div class="suit-container">
+                <div class="suit-symbol">&clubs;</div>
+                <div class="asc-btn" id="club-asc" onclick="sortCards('CLUB','asc')"></div>
+                <div class="desc-btn" id="club-desc" onclick="sortCards('CLUB','desc')"></div>
+            </div>
+            <div id="CLUB-CARDS"></div>
+        </div>
+
+        <div id="DIAMOND" class="suits">
+            <div class="suit-container">
+                <div class="suit-symbol" style="color: red;">&diams;</div>
+                <div class="asc-btn" id="diamond-asc" onclick="sortCards('DIAMOND','asc')"></div>
+                <div class="desc-btn" id="diamond-desc" onclick="sortCards('DIAMOND','desc')"></div>
+            </div>
+            <div id="DIAMOND-CARDS"></div>
+        </div>
+
+        <div id="HEART" class="suits" style="color: red;">
+            <div class="suit-container">
+                <div class="suit-symbol">&hearts;</div>
+                <div class="asc-btn" id="heart-asc" onclick="sortCards('HEART','asc')"></div>
+                <div class="desc-btn" id="heart-desc" onclick="sortCards('HEART','desc')"></div>
+            </div>
+            <div id="HEART-CARDS"></div>
+        </div>
+
+        <div id="SPADE" class="suits">
+            <div class="suit-container">
+                <div class="suit-symbol">&spades;</div>
+                <div class="asc-btn" id="spade-asc" onclick="sortCards('SPADE','asc')"></div>
+                <div class="desc-btn" id="spade-desc" onclick="sortCards('SPADE','desc')"></div>
+            </div>
+            <div id="SPADE-CARDS"></div>
+        </div>
+    </div>
+</body>
+
+</html>
