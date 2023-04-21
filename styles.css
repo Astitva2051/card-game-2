@@ -5,6 +5,10 @@ body {
     background-attachment: fixed;
 }
 
+.allCards{
+    display: flex;
+}
+
 .suits {
     display: inline-block;
 }
@@ -60,3 +64,50 @@ body {
     cursor: pointer;
     align-self: flex-end;
 }
+
+@media only screen and (min-width: 600px) {
+    .asc-btn {
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 25px solid blue;
+    }
+    
+    .desc-btn {
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 25px solid red;
+    }
+
+    .card-img {
+        height: 200px;
+        width: auto;
+    }
+    
+    .cards {
+        margin: 10px;
+    }
+}
+
+ @media only screen and (max-width: 600px) {
+    .asc-btn {
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 30px solid blue;
+    }
+    
+    .desc-btn {
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 30px solid red;
+    }
+
+    .card-img {
+        height: 250px;
+        width: auto;
+    }
+    
+    .cards {
+        margin: 15px;
+    }
+    
+} 
